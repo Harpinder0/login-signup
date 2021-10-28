@@ -1,0 +1,25 @@
+@import "../node_modules/tailwindcss/dist/base.css";
+@import "../node_modules/tailwindcss/dist/components.css";
+@import "../node_modules/tailwindcss/dist/utilities.css";
+
+* {
+    margin:0;
+    padding:0;
+}
+.input {
+    transition: border 0.2s ease-in-out;
+    min-width: 280px
+}
+.input:focus+.label,
+.input:active+.label,
+.input.filled+.label {
+    font-size: .75rem;
+    transition: all 0.2s ease-out;
+    top: -0.3rem;
+    color: #6b7280;
+}
+.label {
+    transition: all 0.2s ease-out;
+    top: 0.4rem;
+    left: 0;
+}
